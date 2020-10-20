@@ -17,11 +17,11 @@ function startRace() {
             document.getElementById("startButton").disabled = false;
             if (horse1.offsetLeft > horse2.offsetLeft) {
                 document.getElementById("board").style.background = "green";
-                info.innerHTML = "Race finished.<br> You won the race !!";
+                info.innerHTML = "Monte hat das Ziel erreicht.<br> Gewonnen!!";
             }
             else {
                 document.getElementById("board").style.background = "red";
-                info.innerHTML = "Race finished.<br> The computer won";
+                info.innerHTML = "Max hat das Ziel erreicht.<br> Leider hat Monte verloren :(";
             }
         }
         else {
@@ -30,10 +30,10 @@ function startRace() {
             horse1.style.left = position1 + "px";
             horse2.style.left = position2 + "px";
             if (horse1.offsetLeft >= horse2.offsetLeft) {
-                info.innerHTML = "You are ahead";
+                info.innerHTML = "Monte ist vorne!";
             }
             else {
-                info.innerHTML = "The computer is ahead";
+                info.innerHTML = "Max ist vorne!";
             }
         }
     }
